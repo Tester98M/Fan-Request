@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Video Question</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>When will I share next music video?</h1>
+    <button onclick="showPopup('weekend')">1: Weekend, for sure</button>
+    <button onclick="showPopup('maybe')">2: Maybe later</button>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <p>Bhaav Khaane Ka Tareeqa Thoda Kezual Hai</p>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for handling popup
+    function showPopup(option) {
+      if (option === 'maybe') {
+        document.getElementById('popup').style.display = 'block';
+      }
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
